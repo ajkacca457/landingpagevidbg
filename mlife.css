@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin:0;
+}
+
+#bgvideo {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -50;
+}
+#navbar {
+  background-color:rgba(28, 186, 33, 0.2);
+  font-family: 'Play', sans-serif;
+  position: fixed;
+  top:0;
+  height: auto;
+  width: 100%;
+  z-index: 100;
+}
+
+.display {
+  font-family: 'Play', sans-serif;
+  background-color:rgba(0, 0, 0, 0.37);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  color:white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.display p {
+  width: 60%;
+  text-align: justify;
+}
+
+.btn {
+  background-color: orangered;
+  color:white;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color:rgba(0, 0, 0, 0.37);
+ }
+
+.item {
+  flex:1;
+  text-align: center;
+  color:white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.item h2,i,p {
+  margin-bottom: 5%;
+}
+
+.item p {
+  text-align: justify;
+  width: 60%;
+  margin: auto;
+}
+
+
+.carousel {
+  width: 60%;
+  margin: auto;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.carcont {
+  background-color:rgba(0, 0, 0, 0.37);
+  padding: 10% 0;
+ }
+
+
+
+@media only screen and (max-width: 800px){
+  .about {
+    display: block;
+    background-color:rgba(0, 0, 0, 0.37);
+   }
+   .item {
+     text-align: center;
+     color:white;
+     text-shadow: 1px 1px 3px black;
+     width: 100%;
+     }
+
+    .item p {
+      padding-bottom: 10%
+    }
+
+    .carousel {
+      width: 80%;
+      margin: auto;
+    }
+
+    .display h1,h2,h3 {
+      font-size:120%;
+    }
+    .display p {
+      display: none;
+    }
+
+    #navbar {
+      background-color:rgba(28, 186, 33, .4);
+  }
+  .btn {
+    margin-top: 5%;
+    font-size:90%;
+  }
+}
